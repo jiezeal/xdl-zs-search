@@ -1,0 +1,371 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------
+zs.css 证书页面样式
+------------------------------------------------------------------------*/
+
+body{
+	background-color: #FFF;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/*外部容器样式*/
+.wrap{
+	position: relative;
+	width: 1062px;
+}
+
+/*证书内容样式*/
+.wrap .content{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 20%;
+}
+
+.wrap .content h2{
+	text-align: center;
+	font-family: "宋体";
+	font-weight: normal;
+	color: #3A5570;
+	letter-spacing: 12px;
+	font-size: 55px;
+}
+
+.wrap .content h3{
+	text-align: center;
+	font-family: "宋体";
+	font-weight: normal;
+	color: #3A5570;
+	letter-spacing: 6px;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.wrap .content p.mc{
+	text-align: center;
+	font-size: 20px;
+	color: #3A5570;
+}
+
+.wrap .content h1{
+	text-align: center;
+	font-size: 50px;
+	font-weight: normal;
+	color: #B34B00;
+}
+
+.wrap .content .url{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-decoration: underline;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #3A5570;
+	text-indent: 8px;
+}
+
+.wrap .content ul{
+	overflow: hidden;
+	zoom: 1;
+}
+
+.wrap .content ul li{
+	text-align: center;
+}
+
+.wrap .content ul li.left{
+	float: left;
+	margin-left: 15%;
+}
+
+.wrap .content ul li.right{
+	float: right;
+	margin-right: 15%;
+}
+
+.wrap .content ul li p.mt{
+	font-size: 21px;
+	padding-bottom: 5px;
+	color: #3A5570;
+}
+
+.wrap .content ul li p.first{
+	letter-spacing: 2px;
+	color: #B34B00;
+}
+
+.wrap .content ul li p.second{
+	text-indent: -6px;
+}
+
+.wrap .content ul li p.md{
+	width: 220px;
+	border-top: 2px solid #9EAFBD;
+	font-size: 10px;
+	padding-top: 8px;
+	color: #3A5570;
+}
+
+.wrap .content ul li.right span{
+	letter-spacing: 2px;
+}
+
+/*当页面大于1200px 时，大屏幕，主要是PC 端*/
+@media (min-width: 1400px){
+	.wrap{
+		width: 1062px;
+	}
+
+	.wrap .content ul li.right span{
+		letter-spacing: 2px;
+	}
+}
+
+/*在992 和1199 像素之间的屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1399px){
+	.wrap{
+		width: 900px;
+	}
+
+	.wrap .content h2{
+		font-size: 45px;
+	}
+
+	.wrap .content h3{
+		font-size: 28px;
+	}
+
+	.wrap .content h1{
+		font-size: 40px;
+	}
+
+	.wrap .content .url{
+		margin: 30px 0 35px 0;
+	}
+
+	.wrap .content ul li.right span{
+		letter-spacing: 2px;
+	}
+}
+
+/*在768 和991 像素之间的屏幕里，中屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+	.wrap{
+		width: 750px;
+	}
+
+	.wrap .content h2{
+		font-size: 35px;
+	}
+
+	.wrap .content h3{
+		font-size: 22px;
+	}
+
+	.wrap .content p.mc{
+		font-size: 16px;
+	}
+
+	.wrap .content h1{
+		font-size: 30px;
+	}
+
+	.wrap .content .url{
+		margin: 25px 0 30px 0;
+		font-size: 14px;
+	}
+	
+	.wrap .content ul li p.mt{
+		font-size: 18px;
+	}
+	
+	.wrap .content ul li p.md{
+		width: 185px;
+	}
+
+	.wrap .content ul li.right span{
+		letter-spacing: 2px;
+	}
+}
+
+/*在480 和767 像素之间的屏幕里，小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px){
+	.wrap{
+		width: 480px;
+	}
+	
+	.wrap .content{
+		top: 18%;
+	}
+
+	.wrap .content h2{
+		font-size: 20px;
+		letter-spacing: 6px;
+	}
+
+	.wrap .content h3{
+		font-size: 14px;
+		margin-bottom: 5px;
+		color: #3A5570;
+	}
+
+	.wrap .content p.mc{
+		font-size: 14px;
+	}
+
+	.wrap .content h1{
+		font-size: 22px;
+	}
+
+	.wrap .content .url{
+		margin: 8px 0 13px 0;
+		font-size: 13px;
+	}
+	
+	.wrap .content ul li p.mt{
+		font-size: 13px;
+		text-indent: 0;
+		padding-bottom: 2px;
+	}
+	
+	.wrap .content ul li p.md{
+		padding-top: 4px;
+		width: 153px;	
+		letter-spacing: 0;
+	}
+
+	.wrap .content ul li.right span{
+		letter-spacing: 1px;
+	}
+}
+
+/*在360和479像素的屏幕，更小的屏幕，更低分辨率的手机*/
+@media (min-width: 360px) and (max-width: 479px){
+	.wrap{
+		width: 358px;
+	}
+
+	.wrap .content{
+		top: 17%;
+	}
+
+	.wrap .content h2{
+		font-size: 17px;
+		letter-spacing: 6px;
+	}
+
+	.wrap .content h3{
+		font-size: 13px;
+		margin-bottom: 2px;
+		color: #3A5570;
+	}
+
+	.wrap .content p.mc{
+		font-size: 13px;
+	}
+
+	.wrap .content h1{
+		font-size: 16px;
+	}
+
+	.wrap .content .url{
+		margin: 2px 0 3px 0;
+		font-size: 12px;
+	}
+
+	.wrap .content ul li.left{
+		margin-left: 11%;
+	}
+
+	.wrap .content ul li.right{
+		margin-right: 11%;
+	}
+	
+	.wrap .content ul li p.mt{
+		font-size: 12px;
+		text-indent: 0;
+		padding-bottom: 0;
+	}
+	
+	.wrap .content ul li p.md{
+		padding-top: 1px;
+		width: 139px;	
+		letter-spacing: 0;
+	}
+	.wrap .content ul li.right span{
+		letter-spacing: 0;
+	}
+}
+
+/*小于359像素的屏幕，微小屏幕，超低分辨率的手机*/
+@media (max-width: 359px){
+	.wrap{
+		width: 318px;
+	}
+
+	.wrap .content{
+		top: 15%;
+	}
+
+	.wrap .content h2{
+		font-size: 15px;
+		letter-spacing: 6px;
+	}
+
+	.wrap .content h3{
+		font-size: 12px;
+		margin-bottom: 2px;
+		color: #3A5570;
+	}
+
+	.wrap .content p.mc{
+		font-size: 12px;
+	}
+
+	.wrap .content h1{
+		font-size: 16px;
+	}
+
+	.wrap .content .url{
+		margin: 0 0 1px 0;
+		font-size: 12px;
+	}
+
+	.wrap .content ul li.left{
+		margin-left: 10%;
+	}
+
+	.wrap .content ul li.right{
+		margin-right: 10%;
+	}
+	
+	.wrap .content ul li p.mt{
+		font-size: 12px;
+		text-indent: 0;
+		padding-bottom: 0;
+	}
+
+	.wrap .content ul li p.mt.first{
+		letter-spacing: 0;
+	}
+
+	.wrap .content ul li p.md{
+		padding-top: 1px;
+		width: 133px;	
+		letter-spacing: 0;
+	}
+
+	.wrap .content ul li p.md.first{
+		width: 120px;
+	}
+
+	.wrap .content ul li.right span{
+		letter-spacing: -1px;
+	}
+}

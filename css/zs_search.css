@@ -1,0 +1,130 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------
+zs_search.css 证书查询页面样式
+------------------------------------------------------------------------*/
+
+/*外部容器样式*/
+#wrap{
+	margin-top: 50px;
+}
+
+/* logo区域样式 */
+.logo{
+	width: 320px;
+	margin: 0 auto 20px auto;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.logo img{
+	float: left;
+	width: 65px;
+}
+
+.logo h1{
+	float: right;
+	font-weight: normal;
+	line-height: 65px;
+	font-size: 25px;
+	font-weight: normal;
+	color: #585757;
+}
+
+/*搜索区域样式*/
+.search{
+	width: 640px;
+	height: 45px;
+	overflow: hidden;
+	zoom: 1;
+	margin: 0 auto;
+}
+
+.search .text{
+	float: left;
+	width: 529px;
+	height: 43px;
+	border: 1px solid #ccc;
+	border-right: none;
+	outline: none;
+	font-size: 18px;
+	color: #585757;
+	text-indent: 8px;
+}
+
+.search .btn{
+	float: right;
+	width: 110px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #c21921;
+	border: 0;
+	font-size: 18px;
+	color: #FFF;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* 481*660 */
+@media (min-width: 481px) and (max-width: 660px){
+	.logo{
+		width: 298px;
+	}
+
+	.logo h1{
+		font-size: 23px;
+	}
+
+	.search{
+		position: relative;
+		width: 98%;
+	}
+
+	.search .text{
+		width: 100%;
+	}
+
+	.search .btn{
+		width: 95px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+/* 小于480 */
+@media (max-width: 480px) {
+	#wrap{
+		min-width: 320px;
+	}
+
+	.logo{
+		width: 268px;
+		margin: 0 auto 15px auto;
+	}
+
+	.logo h1{
+		font-size: 21px;
+		line-height: 55px;
+	}
+
+	.logo img{
+		width: 55px;
+	}
+
+	.search{
+		position: relative;
+		width: 98%;
+	}
+
+	.search .text{
+		width: 100%;
+	}
+
+	.search .btn{
+		width: 82px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 17px;
+	}
+}
